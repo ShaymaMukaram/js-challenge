@@ -174,8 +174,11 @@ addToBOOks(){
     console.log(books.title);
   }
   searchingBooks(){
-      
-
+    var found = books.find(function(element) {
+      return element==title
+    });
+    
+    console.log(found);
   }
 
   }}
